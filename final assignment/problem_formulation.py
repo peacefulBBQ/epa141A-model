@@ -34,7 +34,7 @@ def sum_over_time(*args):
     return summed
 
 
-def get_model_for_problem_formulation(problem_formulation_id):
+def get_model_for_problem_formulation(problem_formulation_id, dike_interest_id=0):
     """Convenience function to prepare DikeNetwork in a way it can be input in the EMA-workbench.
     Specify uncertainties, levers, and outcomes of interest.
 
@@ -48,7 +48,11 @@ def get_model_for_problem_formulation(problem_formulation_id):
                              3: costs and casualties disaggregated over dike rings, and room for the river and evacuation costs
                              4: Expected damages, dike investment cost and casualties disaggregated over dike rings and room for the river and evacuation costs
                              5: disaggregate over time and space
-
+    dike_interest_id       : int {0, 1, 2}
+                             select dikes to have a look only on a specific province
+                             0 : all dikes
+                             1 : Gelderland Province (rings 1,2,3)
+                             2 : Overijssel Province (rings 4,5)
     Notes
     -----
     problem formulations 4 and 5 rely on ArrayOutcomes and thus cannot straightforwardly
