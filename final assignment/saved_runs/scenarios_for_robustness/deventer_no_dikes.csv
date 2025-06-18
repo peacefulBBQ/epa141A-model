@@ -1,0 +1,19 @@
+,16
+0_RfR 0,0
+1_RfR 0,0
+2_RfR 0,0
+3_RfR 0,0
+4_RfR 0,0
+EWS_DaysToThreat,1
+A.1_DikeIncrease 0,0
+A.2_DikeIncrease 0,0
+A.3_DikeIncrease 0,4
+A.4_DikeIncrease 0,3
+A.5_DikeIncrease 0,8
+Expected Annual Damage,8279096.11171997
+Dike Investment Costs,83320488.9361063
+RfR Investment Costs,0.0
+Expected Number of Deaths,0.004080612696507004
+Death Indicator,Low
+RfR Cost Indicator,Financiable
+Dike Cost Indicator,Financiable
