@@ -18,11 +18,21 @@ used analysis methods used in the report.
 If you have used specific packages or have a weird setup which might make it
 hard for others to run: mention it here or change them yourself
 
+## Policy problem
+
+Use Jupyter Notebook named "Problem Formulation varying policies" to visualize costs accross various policies.
+
 ## Global Sensitivity Analysis
 
 Where are the relevant scripts?
 Where are results saved?
 Where can the figures be found which are used in the report?
+
+1. Correlation matrices in the uncertainty space and policy space
+  Use Jupyter Notebook named "Problem Formulation sensitivity".
+
+3. Sobol indices
+   Use Jupyter Notebook named "Problem Formulation sobol".
 
 ## Prim
 
