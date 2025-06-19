@@ -20,18 +20,17 @@ hard for others to run: mention it here or change them yourself
 
 ## Policy problem
 
+The script and figure showing the costs related to the different policies can be found in the PolicyProblem_Costs folder of the final assignment.
 Use Jupyter Notebook named "Problem Formulation varying policies" to visualize costs accross various policies.
 
 ## Global Sensitivity Analysis
 
-Where are the relevant scripts?
-Where are results saved?
-Where can the figures be found which are used in the report?
+1. Correlation matrices in the uncertainty space and policy space:
+The script and figure showing the correlation matrices can be found in the SensitivityAnalysis folder of the final assignment.
+Use Jupyter Notebook named "Problem Formulation sensitivity" to run the figures again.
 
-1. Correlation matrices in the uncertainty space and policy space
-  Use Jupyter Notebook named "Problem Formulation sensitivity".
-
-3. Sobol indices
+3. Sobol indices:
+   The script, saved data and figures showing Sobol indices can be found in the SensitivityAnalysis folder of the final assignment.
    Use Jupyter Notebook named "Problem Formulation sobol".
 
 ## Prim
