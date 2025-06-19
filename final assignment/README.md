@@ -11,17 +11,8 @@
 - Does it make sense to build the Dikes up at a later time step?
 - Probably not
 
-## Policy problem
-
-Use Jupyter Notebook named "Problem Formulation varying policies" to visualize costs accross various policies.
-
 ## Global Sensitivity Analysis
 
-1. Correlation matrices in the uncertainty space and policy space
-  Use Jupyter Notebook named "Problem Formulation sensitivity".
-
-3. Sobol indices
-   Use Jupyter Notebook named "Problem Formulation sobol".
 
 ## Starting with Scenario discovery
 
