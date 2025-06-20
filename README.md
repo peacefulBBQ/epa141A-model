@@ -86,3 +86,21 @@ sampled from the pareto-front of both searches and saved in
 Where are the relevant scripts?
 Where are results saved?
 Where can the figures be found which are used in the report?
+
+### Scripts
+ 
+The scripts to run the robustness measures can be found in `Robustness Measures.ipynb`. 
+These scripts run the model to calculate maximum regret between different policies.
+The outcomes are saved to prevent a need to re-run the model. Additional data 
+processing related to local and national perspective, as well as plotting can 
+also be found.
+
+### Inputs
+
+The respective scenarios from the Directed Search Policy outputs
+are used by the scripts.
+
+### Output
+All outputs related to Robustness are saved in folder `saved_runs/robustness_measures`.
+The outcomes and scenarios used to run the model are saved in `saved_runs/robustness_measures`.
+Plot results are saved in `saved_runs/robustness_measures/image`
