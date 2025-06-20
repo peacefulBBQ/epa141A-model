@@ -26,24 +26,60 @@ Use Jupyter Notebook named "Problem Formulation varying policies" to visualize c
 ## Global Sensitivity Analysis
 
 1. Correlation matrices in the uncertainty space and policy space:
-The script and figure showing the correlation matrices can be found in the SensitivityAnalysis folder of the final assignment.
-Use Jupyter Notebook named "Problem Formulation sensitivity" to run the figures again.
+   The script and figure showing the correlation matrices can be found in the SensitivityAnalysis folder of the final assignment.
+   Use Jupyter Notebook named "Problem Formulation sensitivity" to run the figures again.
 
-3. Sobol indices:
+2. Sobol indices:
    The script, saved data and figures showing Sobol indices can be found in the SensitivityAnalysis folder of the final assignment.
    Use Jupyter Notebook named "Problem Formulation sobol".
 
 ## Prim
 
-Where are the relevant scripts?
-Where are results saved?
-Where can the figures be found which are used in the report?
+### Scripts
+
+The scripts used to conduct the subspace partitioning regarding deaths in the
+report can be found in the folder `00_prim`. While the report focuses only on
+the analysis of the regions Deventer and Zutphen (respective notebooks
+`subspace_partitioning_Deventer` and `subspace_partitioning_Zutphen`) additional
+analysis of the regions of Gorssel and Doesburg can be found there as well.
+
+The complementary `prim_saver` script provides an additional way of running the
+analysis automatically and creating figures. This has not been used to provide
+results for the report though and has been only used exploratively.
+
+### Inputs
+
+These scripts do not run the simulation themselves but only visualize results
+from already existing runs. They access the simulation results saved in
+`saved_runs`under `base_case_exp.pkl`and `base_case_out.pkl`, which are the
+outcomes and experiments used. These runs were conducted by running the
+`00_model_runner.py` script.
+
+### Outputs
+
+PRIM was conducted to generating worst-case reference scenarios for the later
+directed search these results are saved in `saved_runs/reference_cases` with the
+names `worst_case_deventer.pkl` and `worst_case_zutphen.pkl`
 
 ## Directed Search
 
-Where are the relevant scripts?
-Where are results saved?
-Where can the figures be found which are used in the report?
+### Scripts
+
+The scripts to run the directed search can be found in `01_directed_search` as
+`01_directed_search_deventer` and `02_directed_search_zutphen`. These scripts
+produce the data sets that are used then in `03_directed_search_visualization`
+for creating the plots for the report.
+
+### Inputs
+
+The respective scenarios from the PRIM outputs are used by the scripts.
+
+### Outputs
+
+Besides the figures that can be found in the notebook itself, a few policies are
+sampled from the pareto-front of both searches and saved in
+`saved_runs/directed_search` under `search_worst_case_deventer.pkl` and
+`search_worst_case_zutphen.pkl`.
 
 ## Robustness
 
