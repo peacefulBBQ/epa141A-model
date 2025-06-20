@@ -102,5 +102,5 @@ are used by the scripts.
 
 ### Output
 All outputs related to Robustness are saved in folder `saved_runs/robustness_measures`.
-The outcomes and scenarios used to run the model are saved in `saved_runs/robustness_measures`.
-Plot results are saved in `saved_runs/robustness_measures/image`
+The outcomes are saved in `outcomes.pkl`, while scenarios used to run the model are 
+saved in `experiments.pkl`. Plot results are saved in `saved_runs/robustness_measures/image`
